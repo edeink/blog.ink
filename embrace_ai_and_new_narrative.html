@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN" class="night">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=4.0, user-scalable=0" name="viewport">
+    <title>Ede&#39;s Blog</title>
+    <meta name="description" content="Try to be a qualified programmer">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Try to be a qualified programmer">
+    <meta property="og:title" content="Ede&#39;s Blog">
+    <meta property="og:site_name" content="Ede&#39;s Blog">
+    <meta property="og:url" content="https://ede.ink">
+    <meta property="og:image" content="https://edeity.oss-cn-shenzhen.aliyuncs.com/public/edeity_o.png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="mainfest" href="/mainfest.json">
+    <link rel="stylesheet" href="/public/css/common.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_707055_4b9og9sc5lx.css">
+    <script>
+        // 是否需要切换黑夜模式（此JS应在CSS加载前执行，否则会造成页面闪烁）
+        (function toggleNightOrDay() {
+            var isForceNightTheme = window.location.search.indexOf('theme=night') !== -1
+                || window.localStorage.getItem('edeity-theme_theme') === 'night';
+            var isForceLightTheme = window.location.search.indexOf('theme=light') !== -1
+                || window.localStorage.getItem('edeity-theme_theme') === 'light';
+            var hours = new Date().getHours();
+            hours = 22;
+            var html = document.querySelector('html')
+            if (isForceNightTheme) {
+                html.classList.add('night');
+            } else if (isForceLightTheme) {
+                html.classList.remove('night');
+            } else {
+                // 没有强制开关，用时间计算
+                if (hours < 8 || hours >= 20) {
+                    html.classList.add('night');
+                } else {
+                    html.classList.remove('night');
+                }
+            }
+        })();
+        // 切换暗夜模式，需要在CSS渲染前调整，否则重绘时会闪烁
+        document.addEventListener('DOMContentLoaded', function () {
+            // 是否需要隐藏左侧导航栏
+            if (document.querySelector('ol.toc') !== null) {
+                var bar = document.querySelector('#nav-bar')
+                bar.style.cssText = 'display: block'
+            }
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3J9QSEE2Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M3J9QSEE2Z');
+    </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="loading"></div>
+<div id="switch" data-switch="{&#34;toc&#34;:true,&#34;use_pwa&#34;:false}"></div>
+
+<header class="fullscreen">
+    
+    <div class="toolbar">
+        <i class="iconfont icon-menu"></i>
+    </div>
+    <h1>
+        <a href="/">Ede&#39;s Blog</a>
+    </h1>
+
+    <div class="head-link">
+        
+        
+            <a class="btn waves" href="/">
+                <span>
+                    <i class="iconfont icon-home">
+                        Home
+                    </i>
+                </span>
+            </a>
+        
+            <a class="btn waves" href="/about/index.html">
+                <span>
+                    <i class="iconfont icon-me">
+                        About
+                    </i>
+                </span>
+            </a>
+        
+            <a class="btn waves" target="_blank" rel="noopener" href="https://github.com/edeink">
+                <span>
+                    <i class="iconfont icon-github">
+                        Github
+                    </i>
+                </span>
+            </a>
+        
+    </div>
+</header>
+
+<div class="some-link">
+    <a class="btn" id="light-or-not">
+        <i class="iconfont icon-light"></i>
+    </a>
+    <a style="display: none;" class="btn" id="up-to-top">
+        <i class="iconfont icon-up"></i>
+    </a>
+</div>
+
+
+    <div id="nav-bar" style="display: none">
+        <div class="toc">
+            
+        </div>
+    </div>
+
+
+<main id="content-main" class="section">
+    <div class="list-item">
+        <h1 class="post-title">
+            <a id="拥抱 AI：十年三岔口与新叙事" class="article-link" href="">
+                拥抱 AI：十年三岔口与新叙事
+            </a>
+        </h1>
+        <div class="post-meta">
+            <time class="meta published">
+                Dec 31, 2025
+            </time>
+        </div>
+        <!-- 文章声明 -->
+        
+        
+        
+        <div class="article">
+            <div class="post-excerpt markdown-body">
+                <p>2025 年已悄然过去，回首望去，我的职业生涯也即将迈入第十个年头。</p>
+<p>在这个时间节点，我的人生来到了一个新的三岔口。我即将离开工作了五年的字节跳动，准备扬帆起航，开启一段新的旅程。</p>
+<p>当下的前端领域正面临着 AI 的强烈冲击。这既是危机，也是前所未有的机会。站在时代的风口浪尖，我选择更激进地拥抱 AI。</p>
+<p>承上启下之际，我决定在新的载体中开启新一轮的叙事。回望过去，我的知识沉淀主要经历了三个阶段：</p>
+<ol>
+<li><strong>金山及更早时期</strong>：采用<strong>以年份 + 日期</strong>为维度的博客记录风格（正是本文所在的旧博客）。这种方式线性地记录了成长的轨迹，但知识点较为散落。</li>
+<li><strong>字节跳动时期（五年）</strong>：主要使用<strong>飞书 Wiki</strong> 进行记录。Wiki 的结构类似于写书，不依赖时间顺序，更强调知识的体系化。但遗憾的是，企业内部的文档归属权在于公司，个人无法完全拥有这些沉淀。</li>
+<li><strong>未来新篇章</strong>：我将启用新一轮的 <strong>Wiki</strong>（基于 VitePress 或其他开源方案）。</li>
+</ol>
+<p>新的叙事将<strong>抛弃单纯的时间线，弱化具体事件，转而强调主题，专注于专业领域的知识凝聚</strong>。这不仅是为了更好地管理知识上下文，更是为了更好地迎接 AI 的冲击——结构化、主题化的内容更利于 AI 理解和辅助创作。当然，出于效率等功利性考量，在新的内容创作中，我也会更加积极地拥抱 AI 写作。</p>
+<p>最后，宣布一个新的决定：本域名（虽然会长期存在）将逐步废弃，未来的核心内容将迁移至新的博客地址：<a target="_blank" rel="noopener" href="https://storybook.ede.ink/">https://storybook.ede.ink</a>。</p>
+<p>十年磨一剑，今朝再出发。</p>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="more section">
+        
+            <div class="pre">
+                <a class="article-link" href="/">
+                    <i class="iconfont icon-right"></i>
+                    <span>回到首页</span>
+                </a>
+            </div>
+        
+        
+            <div class="next">
+                <a class="article-link" href="/about_font.html">
+                    字体布局和渲染
+                    <i class="iconfont icon-right"></i>
+                </a>
+            </div>
+        
+    </div>
+</main>
+</body>
+<footer class="section fullscreen">
+    <div class="footer-desc">
+        
+            Edeink © 2015-2025 · Powered by Hexo
+        
+    </div>
+</footer>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<!--<script src="https://lab.hakim.se/zoom-js/js/zoom.js"></script>-->
+<script src="/public/js/init.js"></script>
+</html>

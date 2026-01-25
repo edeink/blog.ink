@@ -1,0 +1,62 @@
+.gif-container {
+  position: relative;
+  text-align: center;
+  margin: 0 auto 16px;
+  font-size: 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.gif-container .stop,
+.gif-container .play {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+  transition: all 0.4s ease-in;
+  color: #1d62a2 !important;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.gif-container .stop:hover,
+.gif-container .play:hover {
+  opacity: 1;
+}
+.gif-container .stop.fadeOut,
+.gif-container .play.fadeOut {
+  opacity: 0;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+}
+.gif-container .stop.fadeOut:hover,
+.gif-container .play.fadeOut:hover {
+  opacity: 0;
+}
+.gif-container .stop .iconfont,
+.gif-container .play .iconfont {
+  position: relative;
+  display: inline-block;
+  font-size: 48px;
+  line-height: 48px;
+  transition: all 0.4s ease-in;
+  border-radius: 100%;
+  color: #fff;
+  background: #000;
+  opacity: 0.7;
+}
+.gif-container .stop .iconfont.icon-play,
+.gif-container .play .iconfont.icon-play {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+}
+.gif-container .stop {
+  opacity: 0.2;
+}
+.gif-container:hover .layer {
+  opacity: 0.5;
+}
